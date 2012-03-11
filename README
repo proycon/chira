@@ -1,0 +1,24 @@
+CHINESE READING ASSISTANT (chira)
+---------------------------------
+ by Maarten van Gompel (proycon)
+ proycon@anaproy.nl
+ http://proycon.anaproy.nl
+
+Licensed under GPLv3
+
+
+
+INSTALLATION
+
+Install dependencies:
+ - xsel
+ - python-notify
+
+Run make_cedict.sh
+
+Start chira.py
+
+
+Select any chinese text, it will be translated through the notify framework.
+
+
