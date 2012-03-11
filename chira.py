@@ -186,6 +186,7 @@ if __name__ == "__main__":
             out = out.strip()
             if out: 
                 print out.encode('utf-8')
+                print "----------------------------------------"
                 n = pynotify.Notification("Chira", out)
                 n.show()
             
