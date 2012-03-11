@@ -187,7 +187,7 @@ if __name__ == "__main__":
             if out: 
                 print out.encode('utf-8')
                 print "----------------------------------------"
-                n = pynotify.Notification("Chira", out)
+                n = pynotify.Notification("Chinese Reading Assistant", out)
                 n.show()
             
 
