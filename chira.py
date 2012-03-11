@@ -22,7 +22,7 @@ import os
 #   		  3. If none of the above cases hold, then the last vowel in the syllable takes the tone mark.
 def pinyin_diacritics(pinyin):
     if ' ' in pinyin:
-        return " ".join(  [ pinyin_diacritics(x) for x in pinyin.split(' ') if x.strip() ] )
+        return "".join(  [ pinyin_diacritics(x.strip()) for x in pinyin.split(' ') if x.strip() ] )
     
     pinyin = pinyin.lower();
     pinyin = pinyin.replace('u:',u"ü")
