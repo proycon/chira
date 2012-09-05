@@ -116,7 +116,7 @@ class Cedict(object):
                 zht,zhs,other = line.split(' ',2)
                 assert other[0] == '['
                 end = other.find(']')
-                pinyin = pinyin_diacritics(other[1:end - 1])
+                pinyin = pinyin_diacritics(other[1:end ])
                 translations = [ x.strip() for x in other[end+1:].split('/') if x.strip() ]
                 self.dict[zhs] = (pinyin, translations) 
                                                             
